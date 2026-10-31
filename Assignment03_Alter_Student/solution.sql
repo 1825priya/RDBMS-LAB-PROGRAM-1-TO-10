@@ -1,19 +1,7 @@
-DROP DATABASE IF EXISTS CollegeDB;
-CREATE DATABASE CollegeDB;
-USE CollegeDB;
-
-CREATE TABLE Student(
-    StudentID INT(5) PRIMARY KEY,
-    StudentName VARCHAR(20) NOT NULL,
-    DOB DATE,
-    Gender VARCHAR(10),
-    DepartmentID INT(5)
-);
-
--- Alter Student table
-
--- Add Email
-
--- Add PhoneNumber
-
--- Display structure
+use collegeDB;
+create table Cource(courceID int(10) primary key,courceName
+varchar(20),Credits int(10),departmentID int(5));
+insert into Cource values (101,"BCA",4,201),(102,"BSC IT",5,204),
+(103,"BBA",4,210);
+desc Cource;
+select * from Cource;
