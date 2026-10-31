@@ -1,17 +1,3 @@
-DROP DATABASE IF EXISTS CollegeDB;
-CREATE DATABASE CollegeDB;
-USE CollegeDB;
-
--- Create Student table
-
--- StudentID
-
--- StudentName
-
--- DOB
-
--- Gender
-
--- DepartmentID
-
--- Add constraints
+use college DB;
+ALTER table Student add (email varchar(30),phonenumber int(10));
+desc Student;
